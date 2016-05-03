@@ -571,6 +571,25 @@ body {
     width: 100%;
   }
 }
+.swiper-slide-active .obj4 {
+  animation: animate1 .5s linear forwards ;
+}
+@keyframes animate1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
 /*第二层*/
 .swiper-wrapper .two {
   background: url(../images/bg2.jpg) repeat center top;
@@ -1057,4 +1076,10 @@ body {
     text-align: center;
     line-height: 80px;
   }
+}
+.swiper-slide-active .text-area {
+  animation: animate1 .5s linear forwards ;
+}
+.swiper-slide-active .obj-brain {
+  animation: animate2 .5s linear forwards ;
 }

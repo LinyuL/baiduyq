@@ -427,6 +427,7 @@ body{
         background-position: -1000px;
       }
     }
+
     @media screen and (max-width:768px){
         .nav1{
           width:100%;
@@ -585,7 +586,25 @@ body{
     }
   }
 }
-
+.swiper-slide-active .obj4{
+    animation: animate1 .5s linear forwards ;
+}
+@keyframes animate1 {
+    0%{
+      transform:translateX(0);
+    }
+    100%{
+      transform: translateX(30px);
+     }
+}
+@keyframes animate2 {
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform: translateX(-30px);
+  }
+}
 /*第二层*/
 .swiper-wrapper .two{
   &{
@@ -1091,31 +1110,9 @@ body{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.swiper-slide-active .text-area{
+  animation: animate1 .5s linear forwards ;
+}
+.swiper-slide-active .obj-brain{
+  animation: animate2 .5s linear forwards ;
+}
